@@ -45,6 +45,8 @@
 		0448BBF82BAD733300734488 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BBF72BAD733300734488 /* Date+String.swift */; };
 		0448BBFA2BAD736C00734488 /* Data+Bytes&Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448BBF92BAD736C00734488 /* Data+Bytes&Number.swift */; };
 		044E12FC2C129F2F005BBA9B /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E12FB2C129F2F005BBA9B /* Macro.swift */; };
+		046E13572CD8B3B4009A394B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 046E13562CD8B3B4009A394B /* Alamofire */; };
+		046E135A2CD8B3C0009A394B /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 046E13592CD8B3C0009A394B /* SwiftOTP */; };
 		0471797A2C10411C007A39B6 /* TinyPngSettingWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047179782C10411C007A39B6 /* TinyPngSettingWC.swift */; };
 		0471797B2C10411C007A39B6 /* TinyPngSettingWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047179792C10411C007A39B6 /* TinyPngSettingWC.xib */; };
 		048AA0552BB2F6A8003C89DF /* SDCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AA0542BB2F6A8003C89DF /* SDCache.swift */; };
@@ -68,7 +70,6 @@
 		04CCB9692C0D70E600ED26A0 /* TPQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB9652C0D70E600ED26A0 /* TPQueue.swift */; };
 		04CCB96A2C0D70E600ED26A0 /* TPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB9662C0D70E600ED26A0 /* TPStore.swift */; };
 		04CCB96C2C0D712E00ED26A0 /* TinyPngItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB96B2C0D712E00ED26A0 /* TinyPngItem.swift */; };
-		04CCB96F2C0D737100ED26A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04CCB96E2C0D737100ED26A0 /* Alamofire */; };
 		04D330832BCFB99B003D4F0D /* StatusItemController+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D330822BCFB99B003D4F0D /* StatusItemController+Menu.swift */; };
 		04D330852BCFB9A5003D4F0D /* StatusItemController+Drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D330842BCFB9A5003D4F0D /* StatusItemController+Drop.swift */; };
 		04D331E22BCFC8CB003D4F0D /* AuthenticatorUrlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D331E12BCFC8CB003D4F0D /* AuthenticatorUrlModel.swift */; };
@@ -77,7 +78,6 @@
 		04DD32D42BBBFF5600029A8B /* AppCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD32D32BBBFF5600029A8B /* AppCache.swift */; };
 		04DD32D72BBC02E300029A8B /* SD_BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD32D62BBC02E300029A8B /* SD_BaseModel.swift */; };
 		04DDAFA12BD101DD009CBC0E /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 04DDAFA02BD101DD009CBC0E /* Crypto */; };
-		04DDAFA42BD101F3009CBC0E /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 04DDAFA32BD101F3009CBC0E /* SwiftProtobuf */; };
 		04DDAFA72BD103B4009CBC0E /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 04DDAFA62BD103B4009CBC0E /* SwiftOTP */; };
 		04DFB4C52BAA7E3C0035E16C /* ShieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB4C42BAA7E3C0035E16C /* ShieldsView.swift */; };
 		04DFB4C72BAA8D960035E16C /* AppDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB4C62BAA8D960035E16C /* AppDownloadView.swift */; };
@@ -166,9 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DDAFA12BD101DD009CBC0E /* Crypto in Frameworks */,
-				04CCB96F2C0D737100ED26A0 /* Alamofire in Frameworks */,
+				046E13572CD8B3B4009A394B /* Alamofire in Frameworks */,
 				04DDAFA72BD103B4009CBC0E /* SwiftOTP in Frameworks */,
-				04DDAFA42BD101F3009CBC0E /* SwiftProtobuf in Frameworks */,
+				046E135A2CD8B3C0009A394B /* SwiftOTP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,9 +513,9 @@
 			name = DeskTool;
 			packageProductDependencies = (
 				04DDAFA02BD101DD009CBC0E /* Crypto */,
-				04DDAFA32BD101F3009CBC0E /* SwiftProtobuf */,
 				04DDAFA62BD103B4009CBC0E /* SwiftOTP */,
-				04CCB96E2C0D737100ED26A0 /* Alamofire */,
+				046E13562CD8B3B4009A394B /* Alamofire */,
+				046E13592CD8B3C0009A394B /* SwiftOTP */,
 			);
 			productName = DeskTool;
 			productReference = 041ED83B2BA8467800353D62 /* DeskTool.app */;
@@ -547,10 +547,8 @@
 			);
 			mainGroup = 041ED8322BA8467800353D62;
 			packageReferences = (
-				04DDAF9F2BD101DD009CBC0E /* XCLocalSwiftPackageReference "swift-crypto" */,
-				04DDAFA22BD101F3009CBC0E /* XCLocalSwiftPackageReference "swift-protobuf" */,
-				04DDAFA52BD103B4009CBC0E /* XCLocalSwiftPackageReference "SwiftOTP" */,
-				04CCB96D2C0D737100ED26A0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				046E13552CD8B3B4009A394B /* XCLocalSwiftPackageReference "Modules/Alamofire" */,
+				046E13582CD8B3C0009A394B /* XCLocalSwiftPackageReference "Modules/SwiftOTP" */,
 			);
 			productRefGroup = 041ED8322BA8467800353D62;
 			projectDirPath = "";
@@ -863,44 +861,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		04DDAF9F2BD101DD009CBC0E /* XCLocalSwiftPackageReference "swift-crypto" */ = {
+		046E13552CD8B3B4009A394B /* XCLocalSwiftPackageReference "Modules/Alamofire" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "swift-crypto";
+			relativePath = Modules/Alamofire;
 		};
-		04DDAFA22BD101F3009CBC0E /* XCLocalSwiftPackageReference "swift-protobuf" */ = {
+		046E13582CD8B3C0009A394B /* XCLocalSwiftPackageReference "Modules/SwiftOTP" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "swift-protobuf";
-		};
-		04DDAFA52BD103B4009CBC0E /* XCLocalSwiftPackageReference "SwiftOTP" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = SwiftOTP;
+			relativePath = Modules/SwiftOTP;
 		};
 /* End XCLocalSwiftPackageReference section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		04CCB96D2C0D737100ED26A0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.8.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		04CCB96E2C0D737100ED26A0 /* Alamofire */ = {
+		046E13562CD8B3B4009A394B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 04CCB96D2C0D737100ED26A0 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		046E13592CD8B3C0009A394B /* SwiftOTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftOTP;
 		};
 		04DDAFA02BD101DD009CBC0E /* Crypto */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Crypto;
-		};
-		04DDAFA32BD101F3009CBC0E /* SwiftProtobuf */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SwiftProtobuf;
 		};
 		04DDAFA62BD103B4009CBC0E /* SwiftOTP */ = {
 			isa = XCSwiftPackageProductDependency;
