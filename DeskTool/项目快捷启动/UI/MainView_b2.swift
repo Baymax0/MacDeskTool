@@ -1,0 +1,58 @@
+//
+//  MainView_b2.swift
+//  DeskTool
+//
+//  Created by unitree on 2024/3/19.
+//
+
+import SwiftUI
+
+struct MainView_b2: View {
+    /// 备注信息
+    @State var markString:String = "1"
+    let markCacheKey:CacheKey = .mark_b2
+
+    /// (版本号,build号)
+    @State var version:(String,String) = ("","")
+    /// 显示下载二维码
+    @State var showCode:Bool = false // go2_download
+    var downloadURl = "https://flowus.cn/share/a4929e2c-6224-4997-837b-95c231342726?code=ZWN81R"
+    
+    var body: some View {
+        VStack(alignment:.leading, spacing: 4){
+            HStack(spacing:5){
+                ShieldsView(title: "版本号", value: $version.0, color: .myRed)
+                ShieldsView(title: "Build", value: $version.1, color: .myGreen)
+            }
+            
+            HStack(spacing:12){
+                FlowBtn(img: "pc"){ ToolFunc.openPath(.b2_Project) }
+                FlowBtn(img: "folder"){ ToolFunc.openPath(.b2_File) }
+                FlowBtn(img: "tablecells"){ ToolFunc.openPath(.go2_Excel) }
+                FlowBtn(img: "qrcode"){ showCode = true }
+            }.padding(.vertical, 8)
+
+            HStack(spacing:12){
+                FlowBtn_Long(img: "play.fill",title: "更新web", cmdType: .b2_UpdateWeb)
+                FlowBtn_Long(img: "play.fill",title: "更新翻译", cmdType: .b2_UpdateExcel)
+            }
+            MyTextEditor(text: $markString).padding(.top, 8)
+        }
+        .mainViewBg()
+        .overlay(content: {
+            AppDownloadView(showCode: $showCode, downloadURl: downloadURl, img: .b2Download)
+        })
+        .onAppear {
+            version = ToolFunc.getVersion(.b2_Project)
+            showCode = false
+            markString = Cache.getMark(key: markCacheKey)
+        }.onDisappear(perform: {
+            Cache.save(key: markCacheKey, value: markString)
+        })
+    }
+
+}
+
+#Preview {
+    MainView_b2()
+}
