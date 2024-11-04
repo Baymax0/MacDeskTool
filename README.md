@@ -3,11 +3,6 @@
 
 Mac端，状态栏日常小工具,以及响应一些全局快捷键
 
-## 效果演示
-![image-1](https://raw.githubusercontent.com/Baymax0/MacDeskTool/refs/heads/main/imgs/img1.jpg)
-
-![image-1](https://raw.githubusercontent.com/Baymax0/MacDeskTool/refs/heads/main/imgs/img2.png)
-
 ## 功能与特性
 
 -   电脑全局快捷键呼出控制中台（command+esc）
@@ -23,3 +18,9 @@ Mac端，状态栏日常小工具,以及响应一些全局快捷键
     -   使用SwiftData存储二次验证key
     -   点击即可快速复制二次验证密钥
     -   显示二次验证失效时间
+
+## 效果演示
+![image-1](https://raw.githubusercontent.com/Baymax0/MacDeskTool/refs/heads/main/imgs/img1.jpg)
+
+![image-1](https://raw.githubusercontent.com/Baymax0/MacDeskTool/refs/heads/main/imgs/img2.png)
+
