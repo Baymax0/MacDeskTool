@@ -1,5 +1,6 @@
 # MacDeskTool
 ![Language](https://img.shields.io/badge/Language-%20Swift%20-E57141.svg)
+
 Mac端，状态栏日常小工具,以及响应一些全局快捷键
 
 ## 效果演示
