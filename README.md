@@ -5,7 +5,7 @@ Mac端，状态栏日常小工具,以及响应一些全局快捷键
 ## 效果演示
 ![image-1](https://raw.githubusercontent.com/Baymax0/MacDeskTool/refs/heads/main/imgs/img1.jpg)
 
-![image-1](https://raw.githubusercontent.com/Baymax0/MacDeskTool/refs/heads/main/imgs/img2.jpg)
+![image-1](https://raw.githubusercontent.com/Baymax0/MacDeskTool/refs/heads/main/imgs/img2.png)
 
 ## 功能与特性
 
